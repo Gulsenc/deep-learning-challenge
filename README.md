@@ -6,13 +6,13 @@ The goal of this analysis was to create and test a deep learning model that can 
 Results
 Data Preprocessing
 
-Target Variable(s):
+Target Variables:
 The target variable in this model is IS_SUCCESSFUL. This variable shows whether a charity application was successful (1) or not (0).
 
-Feature Variable(s):
+Feature Variables:
 The features used in the model include all the columns in the dataset, except for EIN, NAME, and IS_SUCCESSFUL. These features represent different aspects of the charity applications, like APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, and ORGANIZATION. These categorical variables were converted into numerical form using one-hot encoding.
 
-Removed Variable(s):
+Removed Variables:
 The EIN and NAME columns were removed because they don’t help in predicting the success of applications. EIN is just an identifier for each application, and NAME is a text field that doesn’t help the model in making predictions.
 
 Compiling, Training, and Evaluating the Model
@@ -33,7 +33,7 @@ Implemented Dropout and Batch Normalization: Dropout layers were added to preven
 Adjusted Learning Rate: The learning rate was changed using a scheduler to help the model learn better.
 Even with these changes, the optimized model reached an accuracy of about 72.83%, which is only a small improvement and still below the target.
 
-Summary
+Summary: 
 The deep learning model created for Alphabet Soup was able to predict the success of charity applications with an accuracy of around 72.83%. Although this result is good, it did not meet the goal of 75% accuracy. Several techniques were used to try and improve the model, such as making the model more complex, adding dropout layers, and adjusting the learning rates.
 
 Recommendation:
